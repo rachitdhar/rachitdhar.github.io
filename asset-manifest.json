@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/rachitdhar.github.io/static/css/main.d6f5beca.css",
-    "main.js": "/rachitdhar.github.io/static/js/main.e2bcb9f8.js",
-    "static/media/x-icon.png": "/rachitdhar.github.io/static/media/x-icon.e58e4997ef85cbd7054c.png",
-    "index.html": "/rachitdhar.github.io/index.html",
-    "main.d6f5beca.css.map": "/rachitdhar.github.io/static/css/main.d6f5beca.css.map",
-    "main.e2bcb9f8.js.map": "/rachitdhar.github.io/static/js/main.e2bcb9f8.js.map"
+    "main.css": "/static/css/main.d6f5beca.css",
+    "main.js": "/static/js/main.df5157aa.js",
+    "static/media/x-icon.png": "/static/media/x-icon.e58e4997ef85cbd7054c.png",
+    "index.html": "/index.html",
+    "main.d6f5beca.css.map": "/static/css/main.d6f5beca.css.map",
+    "main.df5157aa.js.map": "/static/js/main.df5157aa.js.map"
   },
   "entrypoints": [
     "static/css/main.d6f5beca.css",
-    "static/js/main.e2bcb9f8.js"
+    "static/js/main.df5157aa.js"
   ]
 }
