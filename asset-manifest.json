@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/rachitdhar.github.io/static/css/main.d6f5beca.css",
+    "main.js": "/rachitdhar.github.io/static/js/main.e2bcb9f8.js",
+    "static/media/x-icon.png": "/rachitdhar.github.io/static/media/x-icon.e58e4997ef85cbd7054c.png",
+    "index.html": "/rachitdhar.github.io/index.html",
+    "main.d6f5beca.css.map": "/rachitdhar.github.io/static/css/main.d6f5beca.css.map",
+    "main.e2bcb9f8.js.map": "/rachitdhar.github.io/static/js/main.e2bcb9f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6f5beca.css",
+    "static/js/main.e2bcb9f8.js"
+  ]
+}
