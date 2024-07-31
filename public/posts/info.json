@@ -1,16 +1,9 @@
 [
     {
         "id": 1,
-        "title": "Test Post",
-        "description": "This is the post description.",
-        "dateCreated": [26, 7, 2024],
-        "imgs": []
-    },
-    {
-        "id": 2,
-        "title": "The Etymology of words",
-        "description": "Etymology is the study of the origin of words and how their meanings and structures have evolved over time. This fascinating field delves into the history of words, tracing their roots back to ancient languages and exploring the shifts in pronunciation, spelling, and meaning that have occurred over centuries.",
-        "dateCreated": [28, 7, 2024],
+        "title": "Notes on 'The Republic, Plato'",
+        "description": "Plato's book 'The Republic' is one of the earliest great works in western philosophy, and is a starting point for much of the philosophical thinking developed over the past 2000 years. Here are the notes I took for this book, originally written by me as an assisting guide for discussions in the course HSL754 that I took at IIT Delhi.",
+        "dateCreated": [31, 7, 2024],
         "imgs": []
     }
 ]
