@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 50px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,11 +10,42 @@ body {
 
 a {
     text-decoration: none;
+    font-size: 14px;
 }
 
 p {
     text-align: justify;
     text-justify: inter-word;
+    font-size: 16px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(246, 246, 246, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 12px 24px;
+    font-family: sans-serif;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+    font-weight: bold;
+    color: black;
+}
+
+.header-links a {
+    color: #555;
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 14px;
 }
 
 .main-container {
@@ -19,6 +54,7 @@ p {
     box-sizing: border-box;
     min-height: 100vh;
     align-items: flex-start;
+    margin-top: 40px;
 }
 
 .sidebar {
@@ -28,7 +64,7 @@ p {
     margin-top: 10px;
     width: 250px;
     box-sizing: border-box;
-    top: 20px;
+    top: 70px;
     min-height: 100vh;
 }
 
@@ -246,7 +282,7 @@ p {
 
 .footer-left h1,
 .footer-right h1 {
-    font-size: 28px;
+    font-size: 20px;
     margin: 0 0 10px 0;
 }
 
