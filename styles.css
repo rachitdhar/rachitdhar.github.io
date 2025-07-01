@@ -83,7 +83,23 @@ p {
     justify-content: center;
 }
 
+/* posts */
+
+.posts-link i {
+    margin-left: 5px;
+}
+
+.posts-link {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
 /* library */
+
+.library-link i {
+    margin-left: 5px;
+}
 
 .library-link {
     text-decoration: none;
