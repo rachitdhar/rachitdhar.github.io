@@ -76,7 +76,6 @@ hr {
 .footer-left p {
     margin: 0;
     font-size: 14px;
-    line-height: 1.6;
 }
 
 .social-icons {
@@ -85,8 +84,8 @@ hr {
 }
 
 .social-icons a img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     object-fit: cover;
     transition: opacity 0.3s;
     cursor: pointer;
