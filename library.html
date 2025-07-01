@@ -1,3 +1,108 @@
-<div>
-    
-</div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rachit Dhar | Library</title>
+        <link rel="stylesheet" href="library.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header-style">Library</h1>
+            <hr>
+            <div class="nav-links">
+                <a href="#fic">Fiction</a> |
+                <a href="#nonfic">Non-Fiction</a> |
+                <a href="#acad">Academic</a>
+            </div>
+
+            <section id="fic">
+            <h2>Fiction</h2>
+            <div class="table-wrapper">
+                <table>
+                <thead class="fic-head">
+                    <tr>
+                    <th>Books</th>
+                    <th>Author</th>
+                    <th>
+                        <span class="status-header">
+                        Status
+                        <a href="#" class="fa-solid fa-circle-info info-icon" onclick="alert('Status indicates if the book is available or checked out.')"></a>
+                        </span>
+                    </th>
+                    </tr>
+                </thead>
+                <tbody id="fiction-body"></tbody>
+                </table>
+            </div>
+            </section>
+
+            <section id="nonfic">
+            <h2>Non-Fiction</h2>
+            <div class="table-wrapper">
+                <table>
+                <thead class="nonfic-head">
+                    <tr>
+                    <th>Books</th>
+                    <th>Author</th>
+                    <th>
+                        <span class="status-header">
+                        Status
+                        <a href="#" class="fa-solid fa-circle-info info-icon" onclick="alert('Status indicates if the book is available or checked out.')"></a>
+                        </span>
+                    </th>
+                    </tr>
+                </thead>
+                <tbody id="nonfiction-body"></tbody>
+                </table>
+            </div>
+            </section>
+
+            <section id="acad">
+            <h2>Academic</h2>
+            <div class="table-wrapper">
+                <table>
+                <thead class="acad-head">
+                    <tr>
+                    <th>Books</th>
+                    <th>Author</th>
+                    <th>
+                        <span class="status-header">
+                        Status
+                        <a href="#" class="fa-solid fa-circle-info info-icon" onclick="alert('Status indicates if the book is available or checked out.')"></a>
+                        </span>
+                    </th>
+                    </tr>
+                </thead>
+                <tbody id="academic-body"></tbody>
+                </table>
+            </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-left">
+                <h1>Rachit Dhar</h1>
+                <hr>
+                <p>
+                    © 2025 Rachit Dhar. All rights reserved.<br>
+                    Contact | rachitdhar2511@gmail.com
+                </p>
+            </div>
+            <div class="footer-right">
+                <h1>Social</h1>
+                <hr>
+                <div class="social-icons">
+                    <a href="https://github.com/rachitdhar" target="_blank">
+                        <img src="resources/github-icon.png" alt="GitHub">
+                    </a>
+                    <a href="https://x.com/rchtdhr" target="_blank">
+                        <img src="resources/x-icon.png" alt="Twitter / X">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rachit-dhar-52a42a21b/" target="_blank">
+                        <img src="resources/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="library.js"></script>
+    </body>
+</html>

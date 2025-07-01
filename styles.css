@@ -17,14 +17,13 @@ a {
 }
 
 .sidebar {
+    position: sticky;
     padding: 15px;
     margin-right: 20px;
     margin-top: 10px;
     width: 250px;
     box-sizing: border-box;
-    flex-shrink: 0;
     top: 20px;
-    height: fit-content;
     min-height: 100vh;
 }
 
