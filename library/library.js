@@ -1,16 +1,10 @@
 // sample data (in reality, this will be obtained from an api)
 const data = {
     fiction: [
-    { book: "The Great Gatsby", author: "F. Scott Fitzgerald", status: "Available" },
-    { book: "1984", author: "George Orwell", status: "Checked Out" }
     ],
     nonfiction: [
-    { book: "Sapiens", author: "Yuval Noah Harari", status: "Available" },
-    { book: "Educated", author: "Tara Westover", status: "Available" }
     ],
     academic: [
-    { book: "Introduction to Algorithms", author: "CLRS", status: "Checked Out" },
-    { book: "Linear Algebra Done Right", author: "Sheldon Axler", status: "Available" }
     ]
 };
 
