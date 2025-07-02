@@ -39,8 +39,12 @@ hr {
 
 .nav-links a {
     text-decoration: none;
-    color: black;
+    color: #555;
     margin: 0 10px;
+}
+
+.nav-links a:hover {
+    color: black;
 }
 
 section {
@@ -108,7 +112,6 @@ td {
     justify-content: space-between;
     align-items: flex-start;
     background-color: #f8f9fa;
-    color: black;
     padding: 20px;
     font-family: sans-serif;
 }
@@ -131,6 +134,7 @@ td {
 .footer-right h1 {
     font-size: 20px;
     margin: 0 0 10px 0;
+    color: #444;
 }
 
 .footer-left hr,
@@ -144,6 +148,7 @@ td {
 .footer-left p {
     margin: 0;
     font-size: 14px;
+    color: #555;
 }
 
 .social-icons {
