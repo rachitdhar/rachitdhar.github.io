@@ -24,3 +24,7 @@ function populateTable(sectionId, books) {
 populateTable("fiction-body", data.fiction);
 populateTable("nonfiction-body", data.nonfiction);
 populateTable("academic-body", data.academic);
+
+function handleStatusInfoClick() {
+    alert('Not Read / Reading / Read');
+}
