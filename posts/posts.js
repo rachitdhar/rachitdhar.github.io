@@ -27,7 +27,7 @@ function populatePostsContainer(data) {
       const formattedDate = getDateString(post.created_on);
 
       const link = document.createElement("a");
-      link.href = `posts/${post.id}.html`;
+      link.href = `post/index.html?id=${post.id}`;
       link.className = "post-link";
 
       const section = document.createElement("section");
