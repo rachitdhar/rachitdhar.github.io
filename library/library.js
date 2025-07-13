@@ -21,9 +21,23 @@ function populateTables(books) {
         tr.innerHTML = `
             <td>${row.name}</td>
             <td>${row.author_name}</td>
-            <td>${row.status}</td>
+            <td class='status-column'>${row.status}</td>
         `;
 
+        // assigning classname as per status code
+        switch (row.status_code) {
+            case book_status.NR:
+                tr.className = 'tr_nr';
+                break;
+            case book_status.CR:
+                tr.className = 'tr_cr';
+                break;
+            case book_status.RD:
+                tr.className = 'tr_rd';
+                break;
+        }
+
+        // adding to the correct table
         switch (row.classification_code) {
         case book_classification.FIC:
             tbody_fic.appendChild(tr);

@@ -88,10 +88,28 @@ th {
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  .status-column {
+    display: none;
+  }
+}
+
 td {
   padding: 5px 10px;
   background-color: #fff;
   font-size: 14px;
+}
+
+.tr_nr td {
+    color: black;
+}
+
+.tr_cr td {
+    color: magenta;
+}
+
+.tr_rd td {
+    color: green;
 }
 
 .status-header {
