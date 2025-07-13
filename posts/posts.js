@@ -1,4 +1,5 @@
 const API_URL = "http://localhost:8000/api";
+const loader = document.querySelector('.loader-overlay');
 const monthStringMap = {
     1: "Jan",
     2: "Feb",
@@ -61,6 +62,8 @@ function populatePostsContainer(data) {
         container.appendChild(hr);
       }
     });
+    
+    loader.style.display = 'none';
 }
 
 // entry point

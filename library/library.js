@@ -2,6 +2,7 @@ const API_URL = "http://localhost:8000/api";
 const tbody_fic = document.getElementById('fiction-body');
 const tbody_nfic = document.getElementById('nonfiction-body');
 const tbody_acad = document.getElementById('academic-body');
+const loader = document.querySelector('.loader-overlay');
 
 const book_status = {
     NR: 'NR',
@@ -50,6 +51,7 @@ function populateTables(books) {
             break;
         }
     });
+    loader.style.display = 'none';
 }
 
 function handleStatusInfoClick() {

@@ -4,6 +4,7 @@ const postId = urlParams.get('id');
 const post_title = document.querySelector(".post-title");
 const post_date = document.querySelector(".post-date");
 const post_content = document.querySelector(".post-content");
+const loader = document.querySelector('.loader-overlay');
 
 const monthStringMap = {
     1: "Jan",
@@ -26,7 +27,8 @@ function getDateString(date_str) {
 }
 
 function populateContent(content) {
-    post_content.innerHTML = marked.parse(content);
+    post_content.innerHTML = marked.parse(content);    
+    loader.style.display = 'none';
 }
 
 function populateInfo(data) {
