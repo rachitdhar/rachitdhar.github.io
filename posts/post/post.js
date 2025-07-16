@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://unified-jennet-mildly.ngrok-free.app/api";
 const urlParams = new URLSearchParams(window.location.search);
 const postId = urlParams.get('id');
 const post_title = document.querySelector(".post-title");
@@ -39,7 +39,11 @@ function populateInfo(data) {
 // entry point
 
 // get post info (title, description, ...)
-fetch(`${API_URL}/posts/info?id=${postId}`)
+fetch(`${API_URL}/posts/info?id=${postId}`, {
+  headers: {
+    'ngrok-skip-browser-warning': 'true'
+  }
+})
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');

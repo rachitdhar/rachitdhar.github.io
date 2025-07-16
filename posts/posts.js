@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://unified-jennet-mildly.ngrok-free.app/api";
 const loader = document.querySelector('.loader-overlay');
 const monthStringMap = {
     1: "Jan",
@@ -67,7 +67,11 @@ function populatePostsContainer(data) {
 }
 
 // entry point
-fetch(`${API_URL}/posts`)
+fetch(`${API_URL}/posts`, {
+  headers: {
+    'ngrok-skip-browser-warning': 'true'
+  }
+})
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');

@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://unified-jennet-mildly.ngrok-free.app/api";
 const tbody_fic = document.getElementById('fiction-body');
 const tbody_nfic = document.getElementById('nonfiction-body');
 const tbody_acad = document.getElementById('academic-body');
@@ -59,7 +59,11 @@ function handleStatusInfoClick() {
 }
 
 // entry point
-fetch(`${API_URL}/books`)
+fetch(`${API_URL}/books`, {
+  headers: {
+    'ngrok-skip-browser-warning': 'true'
+  }
+})
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
