@@ -81,4 +81,6 @@ fetch(`${API_URL}/posts`, {
   .then(res => populatePostsContainer(res.data))
   .catch(error => {
     console.error('GET Error: ', error);
+    loader.style.display = 'none';
+    toastr.error('Failed to retrieve posts', 'Error');
   });
