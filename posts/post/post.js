@@ -27,7 +27,9 @@ function getDateString(date_str) {
 }
 
 function populateContent(content) {
-    post_content.innerHTML = marked.parse(content);    
+    if (typeof content === 'string') {
+      post_content.innerHTML = marked.parse(content);
+    }
     loader.style.display = 'none';
 }
 
@@ -53,6 +55,7 @@ fetch(`${API_URL}/posts/info?id=${postId}`, {
   .then(res => populateInfo(res.data[0]))
   .catch(error => {
     console.error('GET Error: ', error);
+    loader.style.display = 'none';
   });
 
 // get post content
@@ -61,9 +64,15 @@ fetch(`${API_URL}/posts?id=${postId}`)
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
+    const contentType = response.headers.get('Content-Type');
+    if (!contentType.includes('text/plain')) {  // to handle cases where API may fail, and return an HTML or JSON response
+      throw new Error('Failed to get valid content type');
+    }
     return response.text();
   })
   .then(content => populateContent(content))
   .catch(error => {
     console.error('GET Error: ', error);
+    loader.style.display = 'none';
+    toastr.error('Failed to retrieve post content', 'Error');
   });

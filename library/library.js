@@ -55,7 +55,7 @@ function populateTables(books) {
 }
 
 function handleStatusInfoClick() {
-    alert('Not Read / Currently Reading / Read');
+    toastr.info('Not Read / Currently Reading / Read', 'Status Types');
 }
 
 // entry point
@@ -73,4 +73,6 @@ fetch(`${API_URL}/books`, {
   .then(res => populateTables(res.data))
   .catch(error => {
     console.error('GET Error: ', error);
+    loader.style.display = 'none';
+    toastr.error('Failed to retrieve book list', 'Error');
   });
