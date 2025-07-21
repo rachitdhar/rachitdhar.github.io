@@ -59,7 +59,11 @@ fetch(`${API_URL}/posts/info?id=${postId}`, {
   });
 
 // get post content
-fetch(`${API_URL}/posts?id=${postId}`)
+fetch(`${API_URL}/posts?id=${postId}`, {
+  headers: {
+    'ngrok-skip-browser-warning': 'true'
+  }
+})
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
