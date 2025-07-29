@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rachit Dhar | Admin</title>
+        <link rel="stylesheet" href="admin.css">
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- jquery (for toastr) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- toastr -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    </head>
+    <body>
+        <div class="loader-overlay"><i class="fas fa-circle-notch fa-spin fa-3x"></i></div>
+        <div class="page-wrapper">
+            <div class="container">
+                <h1 class="header-style">Admin</h1>
+                <hr>
+                <div class="login-section">
+                    <div class="login-info-line">
+                        <label for="username" class="login-info-lbl">User ID:</label>
+                        <input type="text" id="username" class="login-info-input" name="username">
+                    </div>
+                    
+                    <div class="login-info-line">
+                        <label for="password" class="login-info-lbl">Password:</label>
+                        <input type="password" id="password" class="login-info-input" name="password">
+                    </div>
+                    
+                    <button type="submit" class="login-btn" onclick="login()">Login</button>
+                </div>
+            </div>
+        </div>
+        <script src="admin.js"></script>
+    </body>
+</html>
