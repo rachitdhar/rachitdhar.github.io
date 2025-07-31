@@ -1,0 +1,30 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rachit Dhar | New Post</title>
+        <link rel="stylesheet" href="new-post.css">
+
+        <!-- jquery (for toastr) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- toastr -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    </head>
+    <body>
+        <div class="loader-overlay"><i class="fas fa-circle-notch fa-spin fa-3x"></i></div>
+        <div class="page-wrapper">
+            <div class="container">
+                <div class="title-section">
+                    <label for="title">Title</label>
+                    <input type="text" class="post-title" name="title" />
+                </div>
+                <textarea class="post-content" placeholder="Enter the Markdown content here..."></textarea>
+                <div class="post-btn-section">
+                    <button class="post-btn" onclick="submit()">Post</button>
+                </div>
+            </div>
+        </div>
+        <script src="new-post.js"></script>
+    </body>
+</html>

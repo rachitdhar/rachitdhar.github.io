@@ -26,9 +26,11 @@ function login() {
         return response.json();
     })
     .then(data => {
+        sessionStorage.setItem('isAuthenticated', 'true');
         window.location.href('index.html');
     })
     .catch(error => {
+        sessionStorage.setItem('isAuthenticated', 'false');
         console.error('POST Error: ', error);
         loader.style.display = 'none';
         toastr.error('Authentication failed', 'Error');

@@ -144,6 +144,20 @@ hr {
   margin: 0;
 }
 
+.add-post-section {
+    display: none;
+    justify-content: center;
+}
+
+.add-post-btn {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    border: solid 1px solid;
+    text-decoration: none;
+    color: black;
+}
+
 /* footer */
 
 .footer {

@@ -15,6 +15,12 @@ const monthStringMap = {
     12: "Dec",
 };
 const container = document.querySelector(".posts-container");
+const addPostSection = document.querySelector(".add-post-section");
+const isAdmin = sessionStorage.getItem('isAuthenticated');
+
+if (!!isAdmin && isAdmin === 'true') {
+  addPostSection.style.display = "flex";
+}
 
 function getDateString(date_str) {
     const [year, month, date] = date_str.split(" ")[0].split("-").map(Number); // remove the time component, and split the date part
