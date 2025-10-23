@@ -4,90 +4,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rachit Dhar | Library</title>
         <link rel="stylesheet" href="library.css">
-
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-        <!-- jquery (for toastr) -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- toastr -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     </head>
     <body>
-        <div class="loader-overlay"><i class="fas fa-circle-notch fa-spin fa-3x"></i></div>
         <div class="page-wrapper">
             <div class="container">
                 <h1 class="header-style">Library</h1>
                 <hr>
-                <div class="nav-links">
-                    <a href="#fic">fiction</a> |
-                    <a href="#nonfic">non-fiction</a> |
-                    <a href="#acad">academic</a>
-                </div>
-    
-                <section id="fic">
-                <h2>Fiction</h2>
-                <div class="table-wrapper">
-                    <table>
-                    <thead class="fic-head">
-                        <tr>
-                        <th>Book</th>
-                        <th>Author</th>
-                        <th class="status-column">
-                            <span class="status-header">
-                            Status
-                            <a href="#" class="fa-solid fa-circle-info info-icon" onclick=handleStatusInfoClick()></a>
-                            </span>
-                        </th>
-                        </tr>
-                    </thead>
-                    <tbody id="fiction-body"></tbody>
-                    </table>
-                </div>
-                </section>
-    
-                <section id="nonfic">
-                <h2>Non-Fiction</h2>
-                <div class="table-wrapper">
-                    <table>
-                    <thead class="nonfic-head">
-                        <tr>
-                        <th>Book</th>
-                        <th>Author</th>
-                        <th class="status-column">
-                            <span class="status-header">
-                            Status
-                            <a href="#" class="fa-solid fa-circle-info info-icon" onclick=handleStatusInfoClick()></a>
-                            </span>
-                        </th>
-                        </tr>
-                    </thead>
-                    <tbody id="nonfiction-body"></tbody>
-                    </table>
-                </div>
-                </section>
-    
-                <section id="acad">
-                <h2>Academic</h2>
-                <div class="table-wrapper">
-                    <table>
-                    <thead class="acad-head">
-                        <tr>
-                        <th>Book</th>
-                        <th>Author</th>
-                        <th class="status-column">
-                            <span class="status-header">
-                            Status
-                            <a href="#" class="fa-solid fa-circle-info info-icon" onclick=handleStatusInfoClick()></a>
-                            </span>
-                        </th>
-                        </tr>
-                    </thead>
-                    <tbody id="academic-body"></tbody>
-                    </table>
-                </div>
-                </section>
+                <iframe
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT8WFLqtlr0n3mNROYJniVwXE1Cco9EALbSwa2f8r6FW-uIQA9f3QvaZRHku7ol1DGCqOL_b4nfQeNZ/pubhtml?gid=0&amp;single=false&amp;widget=false&amp;headers=false"
+                    class="sheet-frame"
+                ></iframe>
             </div>
             <footer class="footer">
                 <div class="footer-left">
@@ -115,6 +41,5 @@
                 </div>
             </footer>
         </div>
-        <script src="library.js"></script>
     </body>
 </html>
