@@ -169,6 +169,24 @@ p {
     cursor: pointer;
 }
 
+/* written works */
+
+.works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.work-link {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.work-link i {
+    margin-left: 5px;
+}
+
 /* posts */
 
 .posts-link i {
