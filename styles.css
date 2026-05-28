@@ -142,6 +142,11 @@ p {
     margin-bottom: 10px;
 }
 
+.cover-image {
+    display: flex;
+    justify-content: center;
+}
+
 .content-center {
     display: flex;
     justify-content: center;
