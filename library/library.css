@@ -167,6 +167,28 @@ hr {
     display: block;
 }
 
+.favorites-list {
+    display: grid;
+    gap: 2px;
+    padding: 4px;
+}
+
+.favorites-list-item {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) 2fr;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+.favorites-list-author {
+    font-weight: bold;
+    color: #777;
+}
+
+.favorites-list-title {
+    color: #555;
+}
+
 @media (min-width: 900px) {
     .favorites-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -182,5 +204,10 @@ hr {
 @media (max-width: 599px) {
     .favorites-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .favorites-list-item {
+        grid-template-columns: 1fr;
+        gap: 4px;
     }
 }
