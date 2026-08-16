@@ -17,20 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
         "Academic": [
             "../resources/favorites/QED__RichardFeynman.jpg",
             "../resources/favorites/The_Republic__Plato.jpg",
+            "../resources/favorites/The_Sacred_and_The_Profane__MirceaEliade.jpg",
         ],
-        "Other Good Books": [
-            { author: "Jonathan Haidt, Greg Lukianoff", title: "The Coddling of the American Mind" },
-            { author: "Sam Harris", title: "The Moral Landscape" },
-            { author: "Viktor Frankl", title: "Man's Search for Meaning" },
-            { author: "Jeff Hawkins", title: "A Thousand Brains" },
-            { author: "Leonard Susskind, Art Friedman", title: "Quantum Mechanics" },
-            { author: "Cat Bohannon", title: "Eve" },
-            { author: "Kathleen Stock", title: "Material Girls" },
-            { author: "Malcolm Gladwell", title: "Blink" },
-            { author: "-", title: "The Epic of Gilgamesh" },
-            { author: "Fyodor Dostoyevsky", title: "Notes from Underground" },
-            { author: "Lewis Carroll", title: "Alice's Adventures in Wonderland" },
-        ]
+        // "Other Good Books": [
+        //     { author: "Jonathan Haidt, Greg Lukianoff", title: "The Coddling of the American Mind" },
+        //     { author: "Sam Harris", title: "The Moral Landscape" },
+        //     { author: "Viktor Frankl", title: "Man's Search for Meaning" },
+        //     { author: "Jeff Hawkins", title: "A Thousand Brains" },
+        //     { author: "Leonard Susskind, Art Friedman", title: "Quantum Mechanics" },
+        //     { author: "Cat Bohannon", title: "Eve" },
+        //     { author: "Kathleen Stock", title: "Material Girls" },
+        //     { author: "Malcolm Gladwell", title: "Blink" },
+        //     { author: "-", title: "The Epic of Gilgamesh" },
+        //     { author: "Fyodor Dostoyevsky", title: "Notes from Underground" },
+        //     { author: "Lewis Carroll", title: "Alice's Adventures in Wonderland" },
+        // ]
     };
 
     const root = document.getElementById('favorites-root');
