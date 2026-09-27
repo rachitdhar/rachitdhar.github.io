@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "../resources/favorites/Animal_Farm__GeorgeOrwell.jpg",
             "../resources/favorites/Story_of_the_Eye__GeorgesBataille.jpg",
             "../resources/favorites/The_Epic_of_Gilgamesh.jpg",
+            "../resources/favorites/Things_Fall_Apart__ChinuaAchebe.jpg",
         ],
         "Non Fiction": [
             "../resources/favorites/The_God_Delusion__RichardDawkins.jpg",
